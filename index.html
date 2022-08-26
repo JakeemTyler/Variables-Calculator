@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<sc>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        Your total is:
+    </div>
+
+    <script>
+     let userResponse = prompt("What was your total?");
+    //  Integer
+     userResponse = parseInt (userResponse);
+
+// CODE
+     taxAmount = (userResponse * .07);
+     taxTotalBill = (userResponse+=taxAmount);
+
+     //  Integer
+    taxAmount = parseFloat (taxAmount);
+    taxTotalBill = parseFloat (taxTotalBill);
+ 
+// CODE
+     tipAmount = (taxTotalBill * .15);
+
+    //  Integer
+     tipAmount = parseFloat (tipAmount);
+
+     total = tipAmount + taxTotalBill;
+     alert (total);
+
+     var element = document.querySelector (".box");
+     element.innerHTML="Your total is: " + total; 
+
+    </script>
+
+</body>
+</html>
